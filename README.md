@@ -1,86 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeepSeek Code Companion</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; padding: 20px; }
-        .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        h1, h2, h3 { color: #333; }
-        code { background: #eee; padding: 3px 5px; border-radius: 5px; }
-        pre { background: #222; color: #fff; padding: 10px; border-radius: 5px; overflow-x: auto; }
-        ul { padding-left: 20px; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>🧠 DeepSeek Code Companion</h1>
-        <p>🚀 Your AI Pair Programmer with Debugging Superpowers</p>
-        <hr>
-        
-        <h2>🌟 About DeepSeek</h2>
-        <p>DeepSeek is an AI-powered coding assistant designed to simplify your coding experience by providing:</p>
-        <ul>
-            <li>💡 Concise solutions to coding queries</li>
-            <li>🐞 Debugging assistance with step-by-step suggestions</li>
-            <li>📝 Code documentation and explanations</li>
-            <li>🚀 Solution design guidance</li>
-        </ul>
-        
-        <h2>⚙️ Key Features</h2>
-        <ul>
-            <li>✨ AI Model-Powered</li>
-            <li>🐍 Python Expertise</li>
-            <li>📋 Real-Time Debugging</li>
-            <li>📖 Customizable Prompts</li>
-            <li>💻 Interactive UI</li>
-        </ul>
-        
-        <h2>🚀 Installation</h2>
-        <h3>1️⃣ Download and Install Ollama</h3>
-        <pre><code>curl -fsSL https://ollama.ai/install.sh | sh  # For macOS/Linux</code></pre>
-        <p>For Windows, download and install from <a href="https://ollama.ai/">Ollama's website</a>.</p>
+# 🧠 **DeepSeek Code Companion**  
+🚀 **Your AI Pair Programmer with Debugging Superpowers**  
 
-        <h3>2️⃣ Run the Ollama Model</h3>
-        <pre><code>ollama run deepseek-r1:1.5b</code></pre>
+---
 
-        <h3>3️⃣ Clone the Repository</h3>
-        <pre><code>git clone https://github.com/your-username/deepseek-code-companion.git
-cd deepseek-code-companion</code></pre>
+### **🌟 About DeepSeek**  
+DeepSeek is an AI-powered coding assistant designed to simplify your coding experience by providing:  
+- 💡 **Concise solutions to coding queries**  
+- 🐞 **Debugging assistance** with step-by-step suggestions  
+- 📝 **Code documentation and explanations**  
+- 🚀 **Solution design guidance**  
 
-        <h3>4️⃣ Set Up a Virtual Environment</h3>
-        <pre><code>python -m venv venv
+DeepSeek is powered by **LangChain** and **Ollama**, making it a robust tool for coders, developers, and learners alike.  
+
+---
+
+### **⚙️ Key Features**
+✨ **AI Model-Powered:**  
+Built using Ollama's large language model, providing seamless natural language processing for your coding needs.  
+
+🐍 **Python Expertise:**  
+DeepSeek specializes in Python but is versatile enough to assist across multiple programming domains.  
+
+📋 **Real-Time Debugging:**  
+Identify and fix bugs in your code with actionable insights.  
+
+📖 **Customizable Prompts:**  
+Configure the AI's behavior to suit your workflow.  
+
+💻 **Interactive UI:**  
+Powered by Streamlit for an engaging, modern, and sleek user interface.  
+
+---
+
+### **🚀 Installation**  
+
+#### 1️⃣ **Clone the Repository**  
+```bash
+git clone https://github.com/your-username/deepseek-code-companion.git
+cd deepseek-code-companion
+```
+
+#### 2️⃣ **Set Up a Virtual Environment**  
+```bash
+python -m venv venv
 source venv/bin/activate  # For macOS/Linux
-venv\Scripts\activate     # For Windows</code></pre>
+venv\Scripts\activate     # For Windows
+```
 
-        <h3>5️⃣ Install Dependencies</h3>
-        <pre><code>pip install -r requirements.txt</code></pre>
+#### 3️⃣ **Install Dependencies**  
+```bash
+pip install -r requirements.txt
+```
 
-        <h3>6️⃣ Run the Application</h3>
-        <pre><code>streamlit run app.py</code></pre>
+#### 4️⃣ **Run the Application**  
+Ensure the Ollama server is running locally on `http://localhost:11434`. Then, launch DeepSeek using:  
+```bash
+streamlit run app.py
+```
 
-        <h2>🔧 How It Works</h2>
-        <p>DeepSeek leverages AI-powered prompt chains, a customizable LLM engine, session state management, and a sleek UI for the best coding experience.</p>
-        
-        <h2>💡 What's Next?</h2>
-        <ul>
-            <li>🌐 Expand support for additional programming languages</li>
-            <li>🤖 Integrate with external debugging tools</li>
-            <li>📊 Add visualization features</li>
-            <li>🎨 More UI themes and configurations</li>
-        </ul>
-        
-        <h2>🛠️ Contributing</h2>
-        <p>We welcome contributions! Follow these steps:</p>
-        <ol>
-            <li>Fork the repository.</li>
-            <li>Create a new branch for your feature/bugfix.</li>
-            <li>Submit a pull request with detailed notes.</li>
-        </ol>
-        
-        <h2>📜 License</h2>
-        <p>This project is licensed under the MIT License.</p>
-    </div>
-</body>
-</html>
+---
+
+### **🎨 UI Showcase**  
+
+#### **Main Screen**  
+🧠 DeepSeek welcomes you with:  
+- A **modern dark mode UI**  
+- An **interactive chat experience**  
+
+#### **Sidebar Configurations**  
+- Choose between AI models.  
+- View **model capabilities** in one glance.  
+- Quick access to [Ollama](https://ollama.ai/) and [LangChain](https://python.langchain.com/).  
+
+---
+
+### **🔧 How It Works**
+
+1. **AI-Powered Prompt Chain:**  
+   - Leverages `ChatPromptTemplate` to dynamically build prompts based on the conversation.  
+   - Ensures the context is preserved for better responses.  
+
+2. **Customizable LLM Engine:**  
+   - Uses `ChatOllama` with a temperature of `0.3` for concise, strategic solutions.  
+
+3. **Session State Management:**  
+   - Tracks the message history for seamless user experience.  
+
+4. **Custom Styling with CSS:**  
+   - Dark mode theme to reduce eye strain and improve focus.  
+
+---
+
+### **💡 What's Next?**  
+- 🌐 Expand support for additional programming languages.  
+- 🤖 Integrate with external debugging tools (e.g., PyLint, Black).  
+- 📊 Add visualization features for data structures and flow diagrams.  
+- 🎨 More UI themes and configurations.  
+
+---
+
+### **🛠️ Contributing**  
+We welcome contributions! Follow these steps to contribute:  
+1. Fork the repository.  
+2. Create a new branch for your feature/bugfix.  
+3. Submit a pull request with detailed notes.  
+
+---
+
+### **📜 License**  
+This project is licensed under the MIT License.  
+
+---
