@@ -36,7 +36,7 @@ Powered by Streamlit for an engaging, modern, and sleek user interface.
 
 #### 1️⃣ **Clone the Repository**  
 ```bash
-git clone https://github.com/your-username/deepseek-code-companion.git
+git clone https://github.com/kamalsai369/Deepseek-AI-Code-Companion.git
 cd deepseek-code-companion
 ```
 
